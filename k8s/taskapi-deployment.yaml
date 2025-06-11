@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taskapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: taskapi
+  template:
+    metadata:
+      labels:
+        app: taskapi
+    spec:
+      containers:
+        - name: taskapi
+          image: taskapi:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_DATA_MONGODB_URI
+              value: mongodb://mongodb:27017/kaiburrdb
