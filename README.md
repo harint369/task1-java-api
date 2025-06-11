@@ -1,4 +1,4 @@
-# ✅ Task 1 – Java REST API with MongoDB (Kaiburr Internship)
+# ✅ Task 1 – Java REST API with MongoDB
 
 This project implements a Spring Boot-based Java REST API that manages and executes shell-based task objects. Each task contains a command that can be executed and logs its execution history. Data is stored in MongoDB.
 
@@ -40,7 +40,7 @@ src/
 
 ## ▶️ How to Run the Application
 
-1. Start your **MongoDB** server (locally or via Docker).
+1. Start your **MongoDB** server (locally).
 2. Clone this repository:
    bash:
    git clone https://github.com/your-username/task1-api.git
